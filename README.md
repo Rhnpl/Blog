@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ### 4. Execute o projeto
 
 ```bash
-python app.py
+python run.py
 ```
 
 O servidor vai iniciar em `http://127.0.0.1:5000`. Acesse pelo navegador.
