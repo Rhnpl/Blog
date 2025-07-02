@@ -1,0 +1,24 @@
+{% extends 'template.html' %}
+{% block conteudo %}
+    <div class="container">
+        <form method="post">
+            <fieldset>
+                <div class="form-group">
+                <label for="titulo">Titulo</label>
+                <input type="text" name="titulo" id="titulo" class="form-control" value="{{ materia.titulo }}">
+                </div>
+                <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <input type="text" name="descricao" id="descricao" class="form-control" value="{{ materia.descricao }}">
+                </div>
+                <div class="form-group">
+                    <label for="conteudo">Conteudo</label>
+                    <textarea name="conteudo" class="form-control" rows="6">{{ materia.conteudo }}</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}

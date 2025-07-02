@@ -1,0 +1,34 @@
+{% extends 'template.html' %}
+{% block conteudo %}
+    {% if not session['usuario_logado'] == Rhnpl %}
+    <div class="container" style="text-align: right;"> 
+        <form action="/nova-postagem" style="display: inline;">
+            <button type="submit" class="btn btn-primary btn-salvar">Nova Postagem</button>
+        </form>
+        <form action="/login" style="display: inline;">
+            <button type="submit" class="btn btn-primary btn-salvar">Editar Postagem</button>
+        </form>
+    </div>
+    {% endif %}
+   <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for materia in post %}
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{{ url_for('materia', id=materia.id) }}">{{ materia.titulo }}</a></h5>
+                    <p class="card-text">{{ materia.descricao }}</p>
+                    {% if not session['usuario_logado'] == Rhnpl %}
+                    <a href="{{ url_for('editar', id=materia.id) }}" class="btn btn-primary btn-salvar">Editar</a>
+                    <form action="{{ url_for('deletar', id=materia.id) }}" method="post" style="display: inline;">
+                        <button type="submit" class="btn btn-primary btn-salvar">Deletar</button>
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
