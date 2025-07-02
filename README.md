@@ -6,7 +6,7 @@ Este é um projeto simples de blog feito em Flask com SQLite, onde você pode cr
 > **Atenção:**  
 > Este projeto é uma base para aprendizado e ainda está em desenvolvimento.  
 > Não é seguro para uso em produção, pois não possui práticas adequadas de segurança (ex: senhas armazenadas em texto plano).  
-> Se for você quiser criar outro usuario tera alterar as propriedas manualmente, mas isso será melhorado.
+> Se você quiser criar outro usuario tera alterar as propriedas manualmente, mas isso será melhorado.
 > Estou aprendendo Flask e desenvolvimento web, e este projeto serve para estudo e prática.
 
 ---
