@@ -28,8 +28,8 @@ Somente com esse usuário você conseguirá fazer login e criar posts.
 ### 1. Clone o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DA_PASTA>
+git clone git@github.com:Rhnpl/Blog.git
+cd Blog
 ```
 
 ### 2. Crie e ative um ambiente virtual (recomendado)
