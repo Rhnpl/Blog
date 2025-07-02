@@ -14,6 +14,7 @@ Este é um projeto simples de blog feito em Flask com SQLite, onde você pode cr
 ## Usuário para Login
 
 Para acessar o sistema e usar as funcionalidades protegidas, utilize o seguinte usuário:
+Acessando `http://127.0.0.1:5000/login`
 
 - **Usuário:** `Rhnpl`  
 - **Senha:** `123456`
